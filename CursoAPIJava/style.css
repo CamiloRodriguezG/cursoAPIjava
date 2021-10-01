@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #6d9886;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gemunu Libre", sans-serif;
+  padding: 100px 0 0 0;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #212121;
+  padding: 10px 15px;
+}
+
+#usr-img {
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: red;
+  height: 40px;
+  width: 40px;
+}
+
+#nota-container {
+  width: 50%;
+}
+
+#nota-container form div {
+  position: relative;
+}
+
+#nota-container form {
+  border-radius: 10px;
+  border: none;
+  background: #d9cab3;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px 20px 40px;
+  gap: 25px;
+}
+
+#nota-container form label {
+  pointer-events: none;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  transition: 0.2s ease-out;
+  color: #6d9886;
+  font-weight: 700;
+}
+
+#nota-titulo:focus ~ label,
+#nota-contenido:focus ~ label,
+#nota-titulo:valid ~ label,
+#nota-contenido:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+#nota-titulo,
+#nota-contenido {
+  width: 100%;
+  background: none;
+  color: #212121;
+  outline: none;
+  border: none;
+  font-family: "Gemunu Libre", sans-serif;
+  padding: 15px 0 5px 0;
+  font-size: 22px;
+  resize: none;
+  border-bottom: 5px solid red;
+  transition: 0.2s ease;
+}
+
+#nota-titulo:focus,
+#nota-contenido:focus,
+#nota-titulo:valid,
+#nota-contenido:valid {
+  border-color: blue;
+}
+
+#guardar-nota {
+  cursor: pointer;
+  border: none;
+  background: #212121;
+  color: #f6f6f6;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px 0;
+  width: 150px;
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+#notas-container {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0 20px;
+  width: 50%;
+  background: #212121;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.nota {
+  background: #f6f6f6;
+  padding: 10px 20px;
+}
+
+.nota-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #212121;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.notahecha-titulo {
+  font-weight: 700;
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.notahecha-fecha {
+  font-weight: 400;
+  margin-right: 10px;
+  color: #c0b4a1;
+}
+
+.borrar-nota-btn {
+  background: none;
+  font-size: 20px;
+  color: #212121;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

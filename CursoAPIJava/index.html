@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <div id="usr-img">C</div>
+      </div>
+    </nav>
+    <div id="nota-container">
+      <form id="formulario-nota">
+        <div>
+          <input
+            type="text"
+            id="nota-titulo"
+            name="nota-titulo"
+            required
+            value
+            autocomplete="off"
+          />
+          <label for="nota-titulo">Nota titulo</label>
+        </div>
+        <div>
+          <textarea
+            type="text"
+            rows="5"
+            id="nota-contenido"
+            name="nota-contenido"
+            required
+            value
+          ></textarea>
+          <label for="nota-contenido">Nota contenido</label>
+        </div>
+        <input id="guardar-nota" type="submit" value="Guardar" />
+      </form>
+    </div>
+    <!-- <h2>Notas</h2> -->
+    <div id="notas-container">
+      
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
